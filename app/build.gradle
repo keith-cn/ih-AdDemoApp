@@ -51,6 +51,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.android.support:multidex:1.0.3"
 
     //Timber log
     implementation 'com.jakewharton.timber:timber:4.7.1'
@@ -59,8 +60,13 @@ dependencies {
     implementation "com.ihandy.appframework:libAppframework$framework_version"
 
     // Golden eyes
-    implementation 'net.appcloudbox.goldeneye:number_a:2019.09.06.001'
+//    implementation 'net.appcloudbox.goldeneye:number_a:2019.09.06.001'
 //    implementation 'net.appcloudbox.goldeneye:number_a:2019.09.05.001'
+
+    implementation 'net.appcloudbox.adadapter:libAdTiktokAdapter.snapshot:testTictok-001.snapshot'
+    implementation ('net.appcloudbox.goldeneye:number_a:2019.09.06.001'){
+        exclude group:'net.appcloudbox.adadapter', module:'libAdTiktokAdapter.beta'
+    }
 }
 
 apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin

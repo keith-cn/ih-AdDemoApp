@@ -1,5 +1,8 @@
 package com.demo.addemoapp;
 
+import android.content.Context;
+import android.support.multidex.MultiDex;
+
 import com.ihs.app.framework.HSApplication;
 
 import net.appcloudbox.AcbAds;
@@ -28,5 +31,12 @@ public class MyApp extends HSApplication {
                 AcbInterstitialAdManager.getInstance().activePlacementInProcess(MainActivity.INTERSTITIAL_AD_PLACEMENT_DRAGON);
             }
         });
+    }
+
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 }
