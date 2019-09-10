@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "628018978843",
+    "firebase_url": "https://number-296d4.firebaseio.com",
+    "project_id": "number-296d4",
+    "storage_bucket": "number-296d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628018978843:android:bcea239c630fab52",
+        "android_client_info": {
+          "package_name": "online.sudoku.puzzle.solver.easy.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628018978843-kiuor8s9e18dv35a6lpavj36qncjufav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGzXsAtydTEvf1AEcyhJZ_0dy0v0rzRsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628018978843-kiuor8s9e18dv35a6lpavj36qncjufav.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "628018978843-nm6ubcrubdafpo5hqd2tjaql6mcmt8i4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "online.happy.sudoku"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
