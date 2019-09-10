@@ -67,6 +67,12 @@ dependencies {
     implementation ('net.appcloudbox.goldeneye:number_a:2019.09.06.001'){
         exclude group:'net.appcloudbox.adadapter', module:'libAdTiktokAdapter.beta'
     }
+
+    implementation "com.google.android.gms:play-services-base:$google_play_services_version"
+
+
+    // android.support.design
+    implementation "com.android.support:design:$support_version"
 }
 
 apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin

@@ -112,7 +112,7 @@ public class MainActivity extends HSAppCompatActivity {
                 if (list != null) {
                     Timber.e("onAdReceived, list size: %d", list.size());
                     if (list.size() > 0) {
-                        AcbInterstitialAd acbInterstitialAd = list.get(0);
+                        final AcbInterstitialAd acbInterstitialAd = list.get(0);
                         acbInterstitialAd.show(MainActivity.this, INTERSTITIAL_AD_PLACEMENT_DRAGON);
                         acbInterstitialAd.setInterstitialAdListener(new AcbInterstitialAd.IAcbInterstitialAdListener() {
                             @Override
