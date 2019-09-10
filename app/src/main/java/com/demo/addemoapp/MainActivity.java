@@ -128,6 +128,7 @@ public class MainActivity extends HSAppCompatActivity {
                             @Override
                             public void onAdClosed() {
                                 Timber.e("onAdClosed : ");
+                                acbInterstitialAd.release();
                             }
 
                             @Override
